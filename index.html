@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const styl = {
+            marginBottom: "7vh"
+        }
+        function Header() {
+            return <p style={{ marginBottom: "7vh" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempora, vero sit ducimus aspernatur laudantium vitae inventore dicta, unde iusto quas tempore ea totam corrupti labore consectetur sequi atque enim! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quibusdam quis repellat aliquam voluptatem velit? Molestias illum id at dignissimos exercitationem modi similique nisi ipsam a, laudantium, fuga tenetur sint?</p>
+        }
+        function Middle() {
+            return <p style={styl}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam qui, modi, ab recusandae optio, corporis temporibus cupiditate ipsum earum fugit architecto commodi deleniti sed. Ducimus laboriosam dicta rem ipsam voluptatem.
+                Culpa sint saepe assumenda nesciunt. Corporis, eum! Ipsa repellendus tempora temporibus doloremque commodi optio, dolores, doloribus amet atque sed voluptatem tenetur ad inventore. Distinctio minima, dignissimos numquam quod debitis impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore possimus fugit, magni asperiores dolores nesciunt molestias delectus quaerat. Vero accusantium beatae incidunt libero, facere laudantium delectus vel molestiae eius numquam.</p>
+        }
+        function End() {
+            return <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas quidem voluptatem aperiam rerum id molestias praesentium hic voluptatum voluptates doloribus amet accusamus repellat sed, eius quis quaerat maxime dicta voluptas?
+                Tempore iure veniam error cupiditate eius officia porro quo, modi fugit! Earum dicta consequatur quo possimus ratione autem animi adipisci, cum obcaecati, enim recusandae perferendis perspiciatis similique. Earum, aspernatur natus.</p>
+        }
+
+        class App extends React.Component {
+            render() {
+                return <div>
+                    <h1>Learn Web Developement</h1>
+                    <Header />
+                    <Middle />
+                    <End />
+                </div>
+            }
+        }
+        ReactDOM.render(<App />, document.getElementById("root"))
+    </script>
+</body>
+
+</html>
